@@ -1,0 +1,17 @@
+.rating-box {
+    gap: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+input:not(:checked)+label {
+    color: #eeeeee3a;
+    transition: 3s;
+}
+
+input:checked+label {
+    color: #ffa534;
+    animation: filling-animation .7s forwards;
+    filter: drop-shadow(0px 0px 10px #ffffff3f);
+}
